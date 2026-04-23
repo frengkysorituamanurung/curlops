@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Check API Health",
+    "curl": "curl -X GET https://api.example.com/health",
+    "service": "monitoring",
+    "description": "Health check endpoint for production API"
+  },
+  {
+    "name": "Get User by ID",
+    "curl": "curl -X GET https://api.example.com/users/123 -H 'Authorization: Bearer TOKEN'",
+    "service": "api",
+    "description": "Retrieve user information by user ID"
+  },
+  {
+    "name": "Create New User",
+    "curl": "curl -X POST https://api.example.com/users -H 'Content-Type: application/json' -d '{\"name\":\"John Doe\",\"email\":\"john@example.com\"}'",
+    "service": "api",
+    "description": "Create a new user account"
+  },
+  {
+    "name": "Database Connection Test",
+    "curl": "curl -X GET http://localhost:5432/health",
+    "service": "database",
+    "description": "Test database connectivity"
+  },
+  {
+    "name": "Trigger Deployment",
+    "curl": "curl -X POST https://ci.example.com/deploy -H 'X-API-Key: SECRET' -d '{\"environment\":\"production\"}'",
+    "service": "deployment",
+    "description": "Trigger production deployment via CI/CD"
+  }
+]
