@@ -88,7 +88,7 @@ func getStoragePath() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return filepath.Join(home, ".curlkeeper", "commands.json"), nil
+	return filepath.Join(home, ".curlops", "commands.json"), nil
 }
 
 func initStorage() error {

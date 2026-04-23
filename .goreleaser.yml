@@ -1,4 +1,4 @@
-project_name: curlkeeper
+project_name: curlops
 
 before:
   hooks:
@@ -15,7 +15,7 @@ builds:
       - arm64
     ldflags:
       - -s -w -X main.version={{.Version}}
-    binary: curlkeeper
+    binary: curlops
 
 archives:
   - format: tar.gz
@@ -31,7 +31,6 @@ archives:
     files:
       - README.md
       - LICENSE
-      - CONTRIBUTING.md
 
 checksum:
   name_template: 'checksums.txt'
@@ -50,9 +49,6 @@ changelog:
       - Merge branch
 
 release:
-  github:
-    owner: yourusername
-    name: curlkeeper
   draft: false
   prerelease: auto
   name_template: "{{.ProjectName}} v{{.Version}}"

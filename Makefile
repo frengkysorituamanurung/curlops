@@ -1,7 +1,7 @@
 .PHONY: build install clean run deps test help
 
 # Variables
-BINARY_NAME=curlkeeper
+BINARY_NAME=curlops
 INSTALL_PATH=/usr/local/bin
 GO=go
 

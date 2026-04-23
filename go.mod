@@ -1,4 +1,4 @@
-module curlkeeper
+module curlops
 
 go 1.21
 

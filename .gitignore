@@ -1,5 +1,5 @@
 # Binaries
-curlkeeper
+curlops
 *.exe
 *.dll
 *.so
@@ -33,7 +33,7 @@ dist/
 *.zip
 
 # Local data (for testing)
-.curlkeeper/
+.curlops/
 
 # Temporary files
 tmp/
